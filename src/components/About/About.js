@@ -1,8 +1,8 @@
 function About() {
 	return (
 		<div className="about">
+			<h3 className="title-about">QUI SUIS-JE ?</h3>
 			<div className="contener-about">
-				<h3 className="title-about">QUI SUIS-JE ?</h3>
 				<p className="texte-about">
 					En tant que développeur front-end passionné, je suis constamment
 					immergé dans l'univers captivant du développement informatique.
