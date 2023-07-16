@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "MaPolice";
+  src: url("../fonts/Belanosima-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+  font-family: "MaPolice", sans-serif;
+}
+
+.navigation-div {
+  background-color: #87ceeb;
+  display: flex;
+  justify-content: end;
+}
+
+.navigation-bar {
+  display: flex;
+  gap: 2rem;
+  margin-right: 60px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navigation-bar a,
+.navigation-bar li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navigation-bar a:hover {
+  color: aliceblue;
+}
+
+.presentation {
+  background-color: #87ceeb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.firstname {
+  font-size: 70px;
+}
+
+.job {
+  width: 50%;
+  align-self: flex-end;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveinverse {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes mouvement {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes vol {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.nuage-one {
+  order: -1;
+  width: 60%;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  animation: move 6s infinite;
+  overflow: hidden;
+}
+
+.nuage-two {
+  width: 30%;
+  align-self: flex-end;
+  animation: mouvement 20s infinite;
+  overflow: hidden;
+}
+
+.nuage-three {
+  width: 60%;
+  align-self: flex-end;
+  animation: mouvement 30s infinite;
+  overflow: hidden;
+}
+
+.nuagee {
+  order: -1;
+  width: 60%;
+  align-self: flex-end;
+  animation: moveinverse 30s infinite;
+  overflow: hidden;
+}
+
+.nuagef {
+  width: 60%;
+  align-self: flex-start;
+  animation: moveinverse 30s infinite;
+  overflow: hidden;
+}
+
+.last-nuage {
+  order: -1;
+  width: 20%;
+  align-self: flex-end;
+  animation: move 6s infinite;
+  overflow: hidden;
+}
+
+.arc {
+  width: 100px;
+}
+
+.photo-lien {
+  position: absolute;
+  left: 10rem;
+  top: auto;
+  bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portrait {
+  width: 250px;
+  border-radius: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center calc(10% - 10px);
+  order: 1;
+  animation: vol 6s infinite;
+}
+
+.btn-git {
+  order: 2;
+  width: 50%;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #87ceeb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-git a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-git a:hover {
+  color: #fff;
+}
+
+.btn-git:hover {
+  background-color: #5c9dcf;
+}
+
+.about {
+  background: #87ceeb;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contener-about {
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-about {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.texte-about {
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.footer {
+  background: #87ceeb;
+}
+
+.skill {
+  background: #87ceeb;
+}
+
+.projet {
+  background: #87ceeb;
+}
+
+/*# sourceMappingURL=style.css.map */
