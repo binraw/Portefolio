@@ -4,7 +4,9 @@ function BtnGit() {
 	return (
 		<button className="btn-git">
 			<img src={logogit} alt="logo github" />
-			<a href="https://github.com/binraw">GitHub</a>
+			<a className="word-github" href="https://github.com/binraw">
+				GitHub
+			</a>
 		</button>
 	);
 }

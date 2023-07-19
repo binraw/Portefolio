@@ -9,11 +9,11 @@ function AppRouter() {
 			<nav className="navigation-div">
 				<ul className="navigation-bar">
 					<li>
-						<Link to="/">ACCUEIL</Link>
+						<Link to="/">ABOUT</Link>
 					</li>
 
 					<li>
-						<Link to="/about">PROJETS</Link>
+						<Link to="/about">WORKS</Link>
 					</li>
 				</ul>
 			</nav>

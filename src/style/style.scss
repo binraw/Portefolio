@@ -3,9 +3,10 @@
 body {
 	overflow-x: hidden;
 	font-family: "MaPolice", sans-serif;
+	color: white;
 }
 .navigation-div {
-	background-color: #87ceeb;
+	background-color: black;
 	display: flex;
 	justify-content: end;
 }
@@ -20,12 +21,14 @@ body {
 .navigation-bar li {
 	text-decoration: none;
 	list-style: none;
+	color: #fff;
 }
 .navigation-bar a:hover {
 	color: aliceblue;
 }
+
 .presentation {
-	background-color: #87ceeb;
+	background-color: black;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -34,11 +37,49 @@ body {
 	height: 90vh;
 }
 .firstname {
-	font-size: 70px;
+	font-size: 140px;
+	background: url(../assets/animated-text.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	animation: aitf 80s linear infinite;
+
+	/* Activate hardware acceleration for smoother animations */
+
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@keyframes aitf {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
 }
 .job {
-	width: 50%;
+	font-size: 90px;
+	width: 60%;
 	align-self: flex-end;
+	background: url(../assets/animated-text.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	animation: aitf 20s linear infinite;
+
+	/* Activate hardware acceleration for smoother animations */
+
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
 }
 @keyframes move {
 	0% {
@@ -84,99 +125,121 @@ body {
 		transform: translateY(0);
 	}
 }
-
-.nuage-one {
-	order: -1;
-	width: 60%;
-
-	align-self: flex-start;
-	margin-left: auto;
-	margin-right: auto;
-	animation: move 6s infinite;
-	overflow: hidden;
-}
-.nuage-two {
-	width: 30%;
-	align-self: flex-end;
-	animation: mouvement 20s infinite;
-	overflow: hidden;
-}
-.nuage-three {
-	width: 60%;
-	align-self: flex-end;
-	animation: mouvement 30s infinite;
-	overflow: hidden;
-}
-.nuagee {
-	order: -1;
-	width: 60%;
-	align-self: flex-end;
-	animation: moveinverse 30s infinite;
-	overflow: hidden;
-}
-.nuagef {
-	width: 60%;
-	align-self: flex-start;
-	animation: moveinverse 30s infinite;
-	overflow: hidden;
-}
-.last-nuage {
-	order: -1;
-	width: 20%;
-	align-self: flex-end;
-	animation: move 6s infinite;
-	overflow: hidden;
-}
-.arc {
-	width: 100px;
-}
-.photo-lien {
+.logo {
 	position: absolute;
-	left: 10rem;
-	top: auto;
-	bottom: auto;
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
+	top: -10px;
+	left: 30px;
 }
-.portrait {
-	width: 250px;
-	border-radius: 100%;
-	height: 350px;
-	object-fit: cover;
-	object-position: center calc(10% - 10px);
-	order: 1;
 
-	animation: vol 6s infinite;
+// .nuage-one {
+// 	order: -1;
+// 	width: 60%;
+
+// 	align-self: flex-start;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	animation: move 6s infinite;
+// 	overflow: hidden;
+// }
+// .nuage-two {
+// 	width: 30%;
+// 	align-self: flex-end;
+// 	animation: mouvement 20s infinite;
+// 	overflow: hidden;
+// }
+// .nuage-three {
+// 	width: 60%;
+// 	align-self: flex-end;
+// 	animation: mouvement 30s infinite;
+// 	overflow: hidden;
+// }
+// .nuagee {
+// 	order: -1;
+// 	width: 60%;
+// 	align-self: flex-end;
+// 	animation: moveinverse 30s infinite;
+// 	overflow: hidden;
+// }
+// .nuagef {
+// 	width: 60%;
+// 	align-self: flex-start;
+// 	animation: moveinverse 30s infinite;
+// 	overflow: hidden;
+// }
+// .last-nuage {
+// 	order: -1;
+// 	width: 20%;
+// 	align-self: flex-end;
+// 	animation: move 6s infinite;
+// 	overflow: hidden;
+// }
+// .arc {
+// 	width: 100px;
+// }
+// .photo-lien {
+// 	position: absolute;
+// 	left: 10rem;
+// 	top: auto;
+// 	bottom: auto;
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: 2rem;
+// }
+// .portrait {
+// 	width: 250px;
+// 	border-radius: 100%;
+// 	height: 350px;
+// 	object-fit: cover;
+// 	object-position: center calc(10% - 10px);
+// 	order: 1;
+
+// 	animation: vol 6s infinite;
+// }
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
 }
 .btn-git {
 	order: 2;
-	width: 50%;
-	align-self: flex-end;
+	width: 100px;
+	height: 250px;
+	align-self: flex-start;
 	display: flex;
 	align-items: center;
-	gap: 1rem;
-	background-color: #87ceeb;
+
+	justify-content: center;
 	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
+	animation: bounce 1.5s ease infinite;
+	border-radius: 50%;
 	font-size: 16px;
 	cursor: pointer;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .btn-git a {
 	text-decoration: none;
-	color: black;
 }
 .btn-git a:hover {
 	color: #fff;
 }
 .btn-git:hover {
-	background-color: #5c9dcf;
+	// background-color: black;
 }
+.word-github {
+	display: none;
+}
+
 .about {
-	background: #87ceeb;
+	background: black;
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -209,7 +272,7 @@ body {
 }
 
 .skill {
-	background: #87ceeb;
+	background: black;
 	height: 100vh;
 	margin: 0;
 	display: flex;
@@ -252,7 +315,7 @@ body {
 	padding: 1rem;
 }
 .atout:hover {
-	background-color: #5c9dcf;
+	background-color: black;
 	color: white;
 }
 .icon-react {
@@ -263,12 +326,12 @@ body {
 }
 
 .footer {
-	background: #87ceeb;
+	background: black;
 	height: 100vh;
 	margin: 0;
 }
 .projet {
-	background: #87ceeb;
+	background: black;
 	height: 100vh;
 	margin: 0;
 }
