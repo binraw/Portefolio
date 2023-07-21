@@ -1,29 +1,27 @@
+import loupe from "../../assets/loupe.png";
+
 function About() {
 	return (
 		<div className="about">
-			<h3 className="title-about">QUI SUIS-JE ?</h3>
+			<h3 className="title-about">
+				About Me <img className="img-about" src={loupe} alt="loupe" />
+			</h3>
+
 			<div className="contener-about">
 				<p className="texte-about">
-					En tant que développeur front-end passionné, je suis constamment
-					immergé dans l'univers captivant du développement informatique.
+					<div className="about-first">
+						As a passionate front-end developer, I am constantly immersed in the
+						captivating world of computer development. My expertise is primarily
+						focused on creating attractive and intuitive user interfaces for
+						websites and applications.
+					</div>
 				</p>
 				<p className="texte-about">
-					Mon expertise se concentre principalement sur la création d'interfaces
-					utilisateur attrayantes et intuitives pour les sites web et les
-					applications. J'ai acquis une solide expérience dans les langages de
-					programmation tels que HTML, CSS et JavaScript, ainsi que dans
-					l'utilisation de frameworks populaires tels que React et Angular.
-				</p>
-				<p className="texte-about">
-					Je suis constamment à la recherche de nouvelles tendances et
-					technologies émergentes dans le domaine, car j'ai une soif insatiable
-					d'apprendre et de me perfectionner.
-				</p>
-				<p className="texte-about">
-					Travailler dans le domaine du développement informatique est bien plus
-					qu'un simple métier pour moi, c'est ma passion qui me permet de
-					transformer des idées en réalité et de contribuer à façonner le monde
-					numérique de demain.
+					<div className="about-first">
+						Working in the front-end development field is more than just a job
+						for me; it's my passion that allows me to turn ideas into reality
+						and contribute to shaping the digital world of tomorrow.
+					</div>
 				</p>
 			</div>
 		</div>
