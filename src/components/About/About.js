@@ -2,7 +2,7 @@ import loupe from "../../assets/loupe.png";
 
 function About() {
 	return (
-		<div className="about">
+		<div className="about ">
 			<h3 className="title-about">
 				About Me <img className="img-about" src={loupe} alt="loupe" />
 			</h3>
