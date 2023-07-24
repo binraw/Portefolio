@@ -1,8 +1,5 @@
-import logomain from "../../assets/main.png";
 import React, { useState } from "react";
 import Bubble from "../Bubble/Bubble";
-
-// import MorphingText from "../Morphing/MorphingText.js";
 
 import BtnGit from "../Btn/BtnGit";
 function Presentation() {
@@ -25,7 +22,6 @@ function Presentation() {
 
 	return (
 		<>
-			{/* <img className="logo" src={logomain} alt="main rouge" /> */}
 			<div className="presentation">
 				<h1
 					className="firstname"
