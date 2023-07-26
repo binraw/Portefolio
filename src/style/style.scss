@@ -381,13 +381,67 @@ body {
 	width: 10%;
 }
 
-.footer {
-	background: black;
-	height: 100vh;
-	margin: 0;
-}
 .projet {
 	background: black;
 	height: 100vh;
 	margin: 0;
+}
+.container-imgpos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.container-img {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+.cover-detail {
+	width: 500px;
+	height: 550px;
+	object-fit: contain;
+}
+.container-descriptionprojet {
+	width: 45%;
+}
+.container-number-slide {
+	width: 100%;
+	order: 4;
+	display: flex;
+	justify-content: center;
+}
+.number-slide {
+	font-size: xx-large;
+}
+.container-btnarrow {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+.btn-change {
+	background-color: transparent;
+	border: none;
+}
+.title-description {
+	font-size: 25px;
+}
+.description-text {
+	font-size: 20px;
+}
+.lien-projet {
+	color: red;
+	transition: font-size 1s;
+	font-size: 16px;
+}
+.lien-projet:hover {
+	font-size: 20px;
+}
+.footer {
+	background: black;
+	height: 30vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

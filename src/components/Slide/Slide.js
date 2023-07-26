@@ -26,19 +26,22 @@ function Slide(props) {
 	return (
 		<>
 			<div className="container-imgpos">
-				<img
-					className="cover-detail"
-					src={currentImage.image}
-					alt="arrow pass card"
-				/>
+				<div className="container-img">
+					<img className="cover-detail" src={currentImage.image} alt="projet" />
+				</div>
 				<div className="container-number-slide">
 					<p className="number-slide">
 						{currentImageIndex + 1}/{props.pictures.length}
 					</p>
 				</div>
-				<p className="image-description">{currentImage.title}</p>
-				<p className="image-text">{currentImage.text}</p>
-				<div>
+				<div className="container-descriptionprojet">
+					<p className="title-description">{currentImage.title}</p>
+					<p className="description-text">{currentImage.text}</p>
+					<a className="lien-projet" href={currentImage.lien}>
+						Github project
+					</a>
+				</div>
+				<div className="container-btnarrow">
 					<button className="btn-change" onClick={handleClickPrevious}>
 						<img className="arrow-left" src={ArrowL} alt="arrow pass card" />
 					</button>
