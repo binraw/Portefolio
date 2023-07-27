@@ -4,6 +4,7 @@ import Presentation from "../../components/Pre/Presentation";
 import About from "../../components/About/About";
 import Projet from "../../components/Projet/Projet";
 import Skill from "../../components/skills/Skill";
+import Contact from "../../components/Contact/Contact";
 function Home() {
 	return (
 		<div className="container">
@@ -11,6 +12,7 @@ function Home() {
 			<About />
 			<Skill />
 			<Projet />
+			<Contact />
 			<Footer />
 		</div>
 	);

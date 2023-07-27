@@ -1,24 +1,25 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "../pages/Home/Home";
-
+import HomeFr from "../pages/Home/HomeFr";
 import NotFound from "../pages/404/Notfound";
 
 function AppRouter() {
 	return (
 		<Router>
-			<nav className="navigation-div">
-				<ul className="navigation-bar">
-					<li>
-						<Link to="/">ABOUT</Link>
+			<nav>
+				<ul>
+					<li className="language-button">
+						<Link to="/fr">Fr</Link>
 					</li>
-
-					<li>
-						<Link to="/about">WORKS</Link>
+					<li className="language-button">
+						<Link to="/">En</Link>
 					</li>
 				</ul>
 			</nav>
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/fr" element={<HomeFr />} />
+
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</Router>

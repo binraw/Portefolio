@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Bubble from "../Bubble/Bubble";
-import Navigation from "../../router/Navigation";
+import NavigationFr from "../../router/NavigateruFr";
 
 import BtnGit from "../Btn/BtnGit";
-function Presentation() {
+function PresentationFr() {
 	const [showBubble, setShowBubble] = useState(false);
 	const [mouseX, setMouseX] = useState(0);
 	const [mouseY, setMouseY] = useState(0);
@@ -23,7 +23,7 @@ function Presentation() {
 
 	return (
 		<>
-			<Navigation />;
+			<NavigationFr />
 			<div className="presentation">
 				<h1
 					className="firstname"
@@ -39,7 +39,7 @@ function Presentation() {
 					onMouseLeave={handleMouseLeave}
 					onMouseMove={handleMouseMove}
 				>
-					Frontend Developer.
+					Développeur Front-end.
 				</h2>
 				<BtnGit />
 				<Bubble show={showBubble} mouseX={mouseX} mouseY={mouseY} />
@@ -47,4 +47,4 @@ function Presentation() {
 		</>
 	);
 }
-export default Presentation;
+export default PresentationFr;

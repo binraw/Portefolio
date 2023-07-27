@@ -10,12 +10,14 @@ body {
   font-family: "MaPolice", sans-serif;
   color: white;
   background-color: black;
+  width: 100%;
 }
 
 .navigation-div {
   background-color: black;
+  width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .navigation-bar {
@@ -26,6 +28,11 @@ body {
   margin-right: 60px;
   font-size: 20px;
   text-decoration: none;
+}
+@media (max-width: 1000px) {
+  .navigation-bar {
+    margin-right: 0px;
+  }
 }
 
 .navigation-bar a,
@@ -41,6 +48,7 @@ body {
 
 .presentation {
   background-color: black;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -48,21 +56,29 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+@media (max-width: 1000px) {
+  .presentation {
+    height: 50vh;
+  }
+}
 
 .firstname {
   font-size: 140px;
   background: url(../assets/animated-text.png) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
-  /* Animate Background Image */
   -webkit-text-fill-color: transparent;
   animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
 }
+@media (max-width: 1000px) {
+  .firstname {
+    font-size: 55px;
+    margin: 0;
+  }
+}
 
-/* Animate Background Image */
 @keyframes aitf {
   0% {
     background-position: 0% 50%;
@@ -84,6 +100,12 @@ body {
   /* Activate hardware acceleration for smoother animations */
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+}
+@media (max-width: 1000px) {
+  .job {
+    font-size: 25px;
+    margin: 0;
+  }
 }
 
 @keyframes move {
@@ -137,6 +159,11 @@ body {
   z-index: 10;
   height: 100px;
 }
+@media (max-width: 1000px) {
+  .logo {
+    height: 30px;
+  }
+}
 
 .bubble {
   position: absolute;
@@ -147,6 +174,12 @@ body {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   pointer-events: none;
+}
+@media (max-width: 1000px) {
+  .bubble {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .bubble-image {
@@ -185,6 +218,19 @@ body {
   border-radius: 50%;
   font-size: 16px;
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .btn-git {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .img-git {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .btn-git a {
@@ -237,6 +283,12 @@ body {
   height: 50px;
   width: 50px;
 }
+@media (max-width: 1000px) {
+  .img-about {
+    height: 20px;
+    width: 20px;
+  }
+}
 
 .title-about {
   color: #fffbf1;
@@ -245,6 +297,11 @@ body {
   font-weight: bold;
   margin: 0;
   transform: translateX(-50%) translateY(-50%);
+}
+@media (max-width: 1000px) {
+  .title-about {
+    font-size: 30px;
+  }
 }
 
 .title-about:before,
@@ -259,6 +316,12 @@ body {
   border: 15px solid rgb(209, 27, 27);
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
   animation: 10s infinite alternate ease-in-out tipsy;
+}
+@media (max-width: 1000px) {
+  .title-about:before,
+  .title-about:after {
+    border: 5px solid rgb(209, 27, 27);
+  }
 }
 
 .title-about:before {
@@ -277,6 +340,12 @@ body {
   padding: 2rem;
   display: inline-block;
   overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .texte-about {
+    font-size: 12px;
+    padding: 0;
+  }
 }
 
 .about-first:first-of-type {
@@ -310,16 +379,32 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1000px) {
+  .skill {
+    height: auto;
+    width: 100%;
+  }
+}
 
 .title-skill {
   font-size: 34px;
   margin: 0;
+}
+@media (max-width: 1000px) {
+  .title-skill {
+    font-size: 20px;
+  }
 }
 
 .contener-skill {
   display: flex;
   gap: 10rem;
   margin-top: 3rem;
+}
+@media (max-width: 1000px) {
+  .contener-skill {
+    flex-direction: column;
+  }
 }
 
 .first-skill {
@@ -332,6 +417,15 @@ body {
   transform: translateY(1000px); /* Initially hide the atout elements */
   transition: opacity 2.5s ease, transform 2.5s ease;
 }
+@media (max-width: 1000px) {
+  .first-skill {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+}
 
 .second-skill {
   align-items: center;
@@ -342,6 +436,15 @@ body {
   opacity: 0;
   transform: translateX(100px); /* Initially hide the atout elements */
   transition: opacity 3.5s ease, transform 5.5s ease;
+}
+@media (max-width: 1000px) {
+  .second-skill {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .atout {
@@ -356,6 +459,11 @@ body {
   background-position: center;
   width: 250px;
   height: 70px;
+}
+@media (max-width: 1000px) {
+  .atout {
+    width: 45%;
+  }
 }
 
 .first-skill.show,
@@ -376,11 +484,21 @@ body {
 .icon-logo {
   width: 10%;
 }
+@media (max-width: 1000px) {
+  .icon-logo {
+    width: 8%;
+  }
+}
 
 .projet {
   background: black;
   height: 100vh;
   margin: 0;
+}
+@media (max-width: 1000px) {
+  .projet {
+    height: auto;
+  }
 }
 
 .container-imgpos {
@@ -394,15 +512,33 @@ body {
   justify-content: center;
   width: 50%;
 }
+@media (max-width: 1000px) {
+  .container-img {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
 
 .cover-detail {
   width: 500px;
   height: 550px;
   object-fit: contain;
 }
+@media (max-width: 1000px) {
+  .cover-detail {
+    width: 100%;
+    height: 250px;
+  }
+}
 
 .container-descriptionprojet {
   width: 45%;
+}
+@media (max-width: 1000px) {
+  .container-descriptionprojet {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 
 .container-number-slide {
@@ -446,6 +582,38 @@ body {
   font-size: 20px;
 }
 
+.container-contact {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-contact {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30rem;
+}
+
+.button-contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.a-contact {
+  color: red;
+  text-decoration: none;
+}
+
+.a-contact:hover {
+  color: black;
+}
+
 .footer {
   background: black;
   height: 30vh;
@@ -453,6 +621,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.language-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.language-button:hover {
+  background-color: #ff0000;
 }
 
 /*# sourceMappingURL=style.css.map */

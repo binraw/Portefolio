@@ -42,7 +42,7 @@ function Skill() {
 	}, []);
 	return (
 		<div className={`skill ${isTitleVisible ? "show-text" : ""}`}>
-			<h3 className="title-skill">My skills at your service.</h3>
+			<h3 className="title-skill">Mes compétences à votre service. </h3>
 			<div className="contener-skill">
 				<ul className={`first-skill ${isTitleVisible ? "show" : ""}`}>
 					<li className="atout">

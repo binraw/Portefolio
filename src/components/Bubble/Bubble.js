@@ -7,7 +7,7 @@ function Bubble({ show, mouseX, mouseY }) {
 			className={`bubble ${show ? "show" : ""}`}
 			style={{ left: mouseX, top: mouseY }}
 		>
-			<img src={selfphoto} alt="Bulle avec l'image" className="bubble-image" />
+			<img src={selfphoto} alt="Bulle avec portrait" className="bubble-image" />
 		</div>
 	);
 }

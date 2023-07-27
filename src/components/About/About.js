@@ -4,7 +4,8 @@ function About() {
 	return (
 		<div className="about ">
 			<h3 className="title-about">
-				About Me <img className="img-about" src={loupe} alt="loupe" />
+				About Me{" "}
+				<img id="section1" className="img-about" src={loupe} alt="loupe" />
 			</h3>
 
 			<div className="contener-about">

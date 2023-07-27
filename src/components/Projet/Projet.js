@@ -34,14 +34,14 @@ function Projet() {
 		},
 		{
 			image: image5,
-			title: "Project Back",
+			title: "SEO Project Jimdo",
 			text: "Welcome to the world of Alice Ruelloux, an extraordinary business coach!I am thrilled to present the exciting project where I had the opportunity to optimize Alice Ruelloux's website. Using my skills in SEO and accessibility, I worked diligently to enhance her site, created with the Jimdo tool.Through advanced SEO techniques, I ensured that Alice's website achieves higher rankings in search engines. This optimization now allows her expertise to shine brighter, attracting a broader audience of professionals eager to benefit from her valuable coaching advice.In parallel, I paid special attention to the site's accessibility, making the experience enjoyable and seamless for all visitors, regardless of their situation. Now, every individual can easily explore Alice's business coaching expertise with an intuitive and inclusive navigation.Alice Ruelloux's website, optimized for SEO and accessibility, serves as an essential gateway to effective and personalized solutions for businesses and professionals seeking success.Step into the world of business coaching and discover how Alice can guide you towards achieving your professional goals. Whatever your needs may be, she will be there to lead you towards fulfillment and accomplishment.Explore this optimized site and get ready for a rewarding experience with Alice Ruelloux, your invaluable partner in the business world.",
 			lien: "https://www.coaching-alice-ruelloux.fr/",
 		},
 	];
 
 	return (
-		<div className="projet">
+		<div id="projet" className="projet">
 			<Slide pictures={pictures} />
 		</div>
 	);
