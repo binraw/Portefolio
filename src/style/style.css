@@ -32,6 +32,12 @@ body {
 @media (max-width: 1000px) {
   .navigation-bar {
     margin-right: 20px;
+    position: relative;
+  }
+}
+@media (max-width: 400px) {
+  .navigation-bar {
+    font-size: 16px;
   }
 }
 
@@ -58,7 +64,7 @@ body {
 }
 @media (max-width: 1000px) {
   .presentation {
-    height: 50vh;
+    height: 30vh;
   }
 }
 
@@ -75,6 +81,12 @@ body {
 @media (max-width: 1000px) {
   .firstname {
     font-size: 55px;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .firstname {
+    font-size: 30px;
     margin: 0;
   }
 }
@@ -104,6 +116,12 @@ body {
 @media (max-width: 1000px) {
   .job {
     font-size: 25px;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .job {
+    font-size: 20px;
     margin: 0;
   }
 }
@@ -605,6 +623,11 @@ body {
   cursor: pointer;
   width: 30rem;
 }
+@media (max-width: 1000px) {
+  .button-contact {
+    width: 50%;
+  }
+}
 
 .button-contact:hover {
   background-color: white;
@@ -640,6 +663,11 @@ body {
   text-decoration: none;
   cursor: pointer;
   margin-right: 10px;
+}
+@media (max-width: 1000px) {
+  .language-button {
+    font-size: 10px;
+  }
 }
 
 .language-button:hover {
