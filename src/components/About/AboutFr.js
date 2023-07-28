@@ -9,7 +9,7 @@ function About() {
 			</h3>
 
 			<div className="contener-about">
-				<p className="texte-about">
+				<div className="texte-about">
 					<div className="about-first">
 						En tant que développeur front-end passionné, je suis constamment
 						plongé dans le monde captivant du développement informatique. Mon
@@ -17,15 +17,15 @@ function About() {
 						utilisateur attrayantes et intuitives pour les sites web et les
 						applications.
 					</div>
-				</p>
-				<p className="texte-about">
+				</div>
+				<div className="texte-about">
 					<div className="about-first">
 						Travailler dans le domaine du développement front-end, c'est bien
 						plus qu'un simple travail pour moi ; c'est ma passion qui me permet
 						de concrétiser des idées et de contribuer à façonner le monde
 						numérique de demain.
 					</div>
-				</p>
+				</div>
 			</div>
 		</div>
 	);

@@ -23,7 +23,7 @@ function Presentation() {
 
 	return (
 		<>
-			<Navigation />;
+			<Navigation />
 			<div className="presentation">
 				<h1
 					className="firstname"

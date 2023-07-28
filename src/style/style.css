@@ -31,7 +31,7 @@ body {
 }
 @media (max-width: 1000px) {
   .navigation-bar {
-    margin-right: 0px;
+    margin-right: 20px;
   }
 }
 
@@ -212,6 +212,7 @@ body {
   align-self: flex-start;
   display: flex;
   align-items: center;
+  margin-left: 30px;
   justify-content: center;
   color: #fff;
   animation: bounce 1.5s ease infinite;
@@ -257,6 +258,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  .about {
+    margin-top: 0;
+  }
 }
 
 .contener-about {
@@ -638,6 +644,25 @@ body {
 
 .language-button:hover {
   background-color: #ff0000;
+}
+
+.language-link {
+  color: #ff0000;
+}
+
+.language-link:hover {
+  color: #fff;
+}
+
+.container-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-error {
+  font-size: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

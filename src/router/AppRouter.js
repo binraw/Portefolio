@@ -9,10 +9,14 @@ function AppRouter() {
 			<nav>
 				<ul>
 					<li className="language-button">
-						<Link to="/fr">Fr</Link>
+						<Link className="language-link" to="/fr">
+							Fr
+						</Link>
 					</li>
 					<li className="language-button">
-						<Link to="/">En</Link>
+						<Link className="language-link" to="/">
+							En
+						</Link>
 					</li>
 				</ul>
 			</nav>
