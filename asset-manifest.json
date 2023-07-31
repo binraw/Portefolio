@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Portefolio/static/css/main.0c2ba1ee.css",
+    "main.js": "/Portefolio/static/js/main.834c5e81.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Portefolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/selfphoto.jpg": "/Portefolio/static/media/selfphoto.ff856dcc063d29032b9a.jpg",
+    "static/media/sophie.png": "/Portefolio/static/media/sophie.710321f40d7cac0faa1f.png",
+    "static/media/ninaseo.png": "/Portefolio/static/media/ninaseo.a5823d085fd36eadc025.png",
+    "static/media/aliceseo.png": "/Portefolio/static/media/aliceseo.0b6e000adbf3e4848c4a.png",
+    "static/media/backprojet.png": "/Portefolio/static/media/backprojet.9d536f20f7c7e6a19989.png",
+    "static/media/kasa.png": "/Portefolio/static/media/kasa.cd5dbacc1ba3bf58c4fd.png",
+    "static/media/Capture d'écran 2023-07-21 104527.png": "/Portefolio/static/media/Capture d'écran 2023-07-21 104527.51d6ef2e5f9dae4f6012.png",
+    "static/media/Capture d'écran 2023-07-21 111555.png": "/Portefolio/static/media/Capture d'écran 2023-07-21 111555.ce622fa69c46d19a7cae.png",
+    "static/media/Belanosima-Regular.ttf": "/Portefolio/static/media/Belanosima-Regular.b88b03558170595da2d8.ttf",
+    "static/media/pupperteer.svg": "/Portefolio/static/media/pupperteer.c62b11dcbbe521c26f99948a7293dad4.svg",
+    "static/media/bash.svg": "/Portefolio/static/media/bash.a643381acd2007037768b328a81fd49c.svg",
+    "static/media/nodejs.svg": "/Portefolio/static/media/nodejs.8c2d5d23353c205b89750cdfa25d5925.svg",
+    "static/media/sass.svg": "/Portefolio/static/media/sass.035949c65edb7bb9da452b2fdd465791.svg",
+    "static/media/react.svg": "/Portefolio/static/media/react.c62018f20d0c345819cc47cead035a74.svg",
+    "static/media/wordpress.svg": "/Portefolio/static/media/wordpress.94cee980942a8c21a619c8c82e6b3776.svg",
+    "static/media/javascript.svg": "/Portefolio/static/media/javascript.6dc8e0173fc9e1b65ae9cdae69a807a5.svg",
+    "static/media/logogit.svg": "/Portefolio/static/media/logogit.93271a59da7af2c944030b41cf8253f3.svg",
+    "index.html": "/Portefolio/index.html",
+    "static/media/html.svg": "/Portefolio/static/media/html.2cf5faaf85594d1e3a8082e76f8a9aa3.svg",
+    "static/media/css.svg": "/Portefolio/static/media/css.2cf507f01ba1f20495c7c56a53d11669.svg",
+    "main.0c2ba1ee.css.map": "/Portefolio/static/css/main.0c2ba1ee.css.map",
+    "main.834c5e81.js.map": "/Portefolio/static/js/main.834c5e81.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Portefolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c2ba1ee.css",
+    "static/js/main.834c5e81.js"
+  ]
+}
