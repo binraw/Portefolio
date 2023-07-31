@@ -9,20 +9,20 @@ function AppRouter() {
 			<nav>
 				<ul>
 					<li className="language-button">
-						<Link className="language-link" to="/fr">
+						<Link className="language-link" to="/Portefolio/fr">
 							Fr
 						</Link>
 					</li>
 					<li className="language-button">
-						<Link className="language-link" to="/">
+						<Link className="language-link" to="/Portefolio">
 							En
 						</Link>
 					</li>
 				</ul>
 			</nav>
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/fr" element={<HomeFr />} />
+				<Route path="/Portefolio" element={<Home />} />
+				<Route path="/Portefolio/fr" element={<HomeFr />} />
 
 				<Route path="*" element={<NotFound />} />
 			</Routes>
